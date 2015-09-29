@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using System.Linq;
 using System.Web;
+using Microsoft.Owin.Security;
 using Microsoft.Owin.Security.Cookies;
 using Microsoft.Owin.Security.OpenIdConnect;
 using Owin;
@@ -24,11 +25,9 @@ namespace CYC.SSO.Client.Site
                 RedirectUri = "https://localhost:44300/",
                 ResponseType = "id_token",
                 
-                SignInAsAuthenticationType = "Cookies"
+                SignInAsAuthenticationType = "Cookies",
+                AuthenticationMode = AuthenticationMode.Active
             });
-
         }
-
-        
     }
 }
