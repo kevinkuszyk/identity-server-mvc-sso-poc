@@ -21,9 +21,7 @@ namespace CYC.SSO.Server.Site
                     Factory = new IdentityServerServiceFactory()
                                 .UseInMemoryUsers(Users.Get())
                                 .UseInMemoryClients(Clients.Get())
-                                .UseInMemoryScopes(StandardScopes.All),
-
-                    RequireSsl = false
+                                .UseInMemoryScopes(StandardScopes.All)
                 });
             });
         }

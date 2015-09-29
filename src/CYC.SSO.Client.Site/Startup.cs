@@ -19,9 +19,9 @@ namespace CYC.SSO.Client.Site
 
             app.UseOpenIdConnectAuthentication(new OpenIdConnectAuthenticationOptions
             {
-                Authority = "http://localhost:33841/identity",
+                Authority = "https://localhost:44306/identity",
                 ClientId = "mvc",
-                RedirectUri = "http://localhost:33881/",
+                RedirectUri = "https://localhost:44300/",
                 ResponseType = "id_token",
                 
                 SignInAsAuthenticationType = "Cookies"

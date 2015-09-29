@@ -18,7 +18,7 @@ namespace CYC.SSO.Server.Site.App_Start
 
                     RedirectUris = new List<string>
                     {
-                        "http://localhost:33881/"
+                        "https://localhost:44300/"
                     },
                     
                     AllowAccessToAllScopes = true
